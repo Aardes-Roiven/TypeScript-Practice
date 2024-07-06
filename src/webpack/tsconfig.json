@@ -2,10 +2,17 @@
   "compilerOptions": {
     "outDir": "dist",
     "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es2016",
-    "jsx": "react",
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
     "allowJs": true,
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
   }
 }
